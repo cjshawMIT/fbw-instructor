@@ -63,6 +63,11 @@ webpackConfig.plugins = [
       collapseWhitespace : true
     }
   }),
+  new webpack.DefinePlugin({
+    "process.env": {
+      BACKEND: JSON.stringify(process.env.BACKEND || 'localhost:8888')
+    }
+  })
 ]
 
 if (__DEV__) {
