@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 import RecommendMission from '../views/RecommendMission'
 
 import {recommendMissionSelector} from '../selectors/recommendMissionSelector'
-import {createTestFlightMissions} from 'fbw-platform-common/reducers/edit-mission/createTestFlightMissions'
-import {updateSpawnDate} from 'fbw-platform-common/reducers/edit-mission/updateSpawnDate'
-import {getEnrolledSubject} from 'fbw-platform-common/selectors/bank'
-import { isTarget } from 'fbw-platform-common/selectors/mission'
+import {createTestFlightMissions} from 'adaptive-common/reducers/edit-mission/createTestFlightMissions'
+import {updateSpawnDate} from 'adaptive-common/reducers/edit-mission/updateSpawnDate'
+import {getEnrolledSubject} from 'adaptive-common/selectors/bank'
+import { isTarget } from 'adaptive-common/selectors/mission'
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {

@@ -3,11 +3,11 @@ import _ from 'lodash'
 
 import EmptyState from '../../../components/EmptyState'
 import QuestionResult from '../components/QuestionResult'
-import DirectiveCarousel from 'fbw-platform-common/components/mission/web/DirectiveCarousel'
-import {osidToDisplayName, d2LDisplayNameToDisplayName} from 'fbw-platform-common/selectors/login'
+import DirectiveCarousel from 'adaptive-common/components/mission/web/DirectiveCarousel'
+import {osidToDisplayName, d2LDisplayNameToDisplayName} from 'adaptive-common/selectors/login'
 import StudentLink from '../components/StudentLink'
-// import TargetCarouselComponent from 'fbw-platform-common/components/mission/web/TargetCarousel'
-// import TargetCarouselContainer from 'fbw-platform-common/components/mission/TargetCarouselContainer'
+// import TargetCarouselComponent from 'adaptive-common/components/mission/web/TargetCarousel'
+// import TargetCarouselContainer from 'adaptive-common/components/mission/TargetCarouselContainer'
 // const TargetCarousel = TargetCarouselContainer(TargetCarouselComponent)
 
 // we make a local copy of TargetCarousel here and change it

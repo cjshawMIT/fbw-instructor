@@ -1,7 +1,7 @@
 'use strict'
 
 import React, {Component} from 'react'
-import {targetKey} from 'fbw-platform-common/selectors/mission'
+import {targetKey} from 'adaptive-common/selectors/mission'
 
 var _ = require('lodash');
 
@@ -24,7 +24,7 @@ class TargetCarousel extends Component {
   _renderTarget = (target, idx) => {
     let targetNumber = targetKey(target);
 
-    let image = <img className="target-icon" src={require('fbw-platform-common/assets/target-question@2x.png')}/>;
+    let image = <img className="target-icon" src={require('adaptive-common/assets/target-question@2x.png')}/>;
 
     let accessibilityLabel = `Target Question ${target.displayName.text}`;
     let isActive = target === this.props.currentTarget;

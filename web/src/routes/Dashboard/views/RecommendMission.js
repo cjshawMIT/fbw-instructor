@@ -7,7 +7,7 @@ import { DateRangePicker } from 'react-dates'
 import 'react-dates/css/variables.scss'
 import 'react-dates/css/styles.scss'
 
-// import {osidToDisplayName} from 'fbw-platform-common/selectors/login'
+// import {osidToDisplayName} from 'adaptive-common/selectors/login'
 
 // require('./datepicker.css')
 import './RecommendMission.scss'

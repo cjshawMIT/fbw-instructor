@@ -3,32 +3,32 @@ import Home from './Home'
 
 import {browserHistory} from 'react-router'
 
-import {getMapping} from 'fbw-platform-common/reducers/Mapping/getMapping'
+import {getMapping} from 'adaptive-common/reducers/Mapping/getMapping'
 
-import {selectBank} from 'fbw-platform-common/reducers/Bank/selectBank'
-import {getItems} from 'fbw-platform-common/reducers/Bank/getItems'
-import {getD2LClassRoster} from 'fbw-platform-common/reducers/Bank/getD2LClassRoster'
+import {selectBank} from 'adaptive-common/reducers/Bank/selectBank'
+import {getItems} from 'adaptive-common/reducers/Bank/getItems'
+import {getD2LClassRoster} from 'adaptive-common/reducers/Bank/getD2LClassRoster'
 
-import {getMissions} from 'fbw-platform-common/reducers/Mission/getMissions'
-import {selectMission} from 'fbw-platform-common/reducers/Mission/selectMission'
+import {getMissions} from 'adaptive-common/reducers/Mission/getMissions'
+import {selectMission} from 'adaptive-common/reducers/Mission/selectMission'
 
-import {deleteMission} from 'fbw-platform-common/reducers/edit-mission/deleteMission'
-import {addMission} from 'fbw-platform-common/reducers/edit-mission/addMission'
-import {editMission} from 'fbw-platform-common/reducers/edit-mission/editMission'
+import {deleteMission} from 'adaptive-common/reducers/edit-mission/deleteMission'
+import {addMission} from 'adaptive-common/reducers/edit-mission/addMission'
+import {editMission} from 'adaptive-common/reducers/edit-mission/editMission'
 
-import {getPhaseIResults} from 'fbw-platform-common/reducers/Result/getPhaseIResults'
-import {getPhaseIIResults} from 'fbw-platform-common/reducers/Result/getPhaseIIResults'
+import {getPhaseIResults} from 'adaptive-common/reducers/Result/getPhaseIResults'
+import {getPhaseIIResults} from 'adaptive-common/reducers/Result/getPhaseIIResults'
 
-import {logOutUser} from 'fbw-platform-common/reducers/Login/logOutUser'
+import {logOutUser} from 'adaptive-common/reducers/Login/logOutUser'
 
 import {changeView} from '../../reducers/view'
 
-import {getD2LToken} from 'fbw-platform-common/selectors/'
-import {getUser} from 'fbw-platform-common/selectors'
+import {getD2LToken} from 'adaptive-common/selectors/'
+import {getUser} from 'adaptive-common/selectors'
 
 // this should ONLY be used for simpleLogin / non-LMS installs. This is NOT scalable.
 // import {BANK_TO_DOMAIN, BANK_TO_LIBRARY} from '../../reducers/common'
-import {findBankLibrary, findBankDomain} from 'fbw-platform-common/utilities'
+import {findBankLibrary, findBankDomain} from 'adaptive-common/utilities'
 
 
 const mapDispatchToProps = (dispatch, ownProps) => {

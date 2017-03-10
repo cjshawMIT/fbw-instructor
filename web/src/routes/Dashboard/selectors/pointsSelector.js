@@ -1,8 +1,8 @@
 import { createSelector } from 'reselect'
 
-import {getMapping, getPhaseIResults, getPhaseIIResults} from 'fbw-platform-common/selectors'
-import {osidToDisplayName} from 'fbw-platform-common/selectors/login'
-import {isTarget} from 'fbw-platform-common/selectors/mission'
+import {getMapping, getPhaseIResults, getPhaseIIResults} from 'adaptive-common/selectors'
+import {osidToDisplayName} from 'adaptive-common/selectors/login'
+import {isTarget} from 'adaptive-common/selectors/mission'
 import {notAchievedOnAttempt} from './common'
 
 

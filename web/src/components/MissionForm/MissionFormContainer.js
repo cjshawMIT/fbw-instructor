@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
 import MissionForm from './MissionForm'
 
-import {createMission} from 'fbw-platform-common/reducers/edit-mission/createMission'
-import {updateMission} from 'fbw-platform-common/reducers/edit-mission/updateMission'
-import {updateMissionForm} from 'fbw-platform-common/reducers/edit-mission/updateMissionForm'
-// import {updateEditMissionForm} from 'fbw-platform-common/reducers/edit-mission/updateEditMissionForm'
+import {createMission} from 'adaptive-common/reducers/edit-mission/createMission'
+import {updateMission} from 'adaptive-common/reducers/edit-mission/updateMission'
+import {updateMissionForm} from 'adaptive-common/reducers/edit-mission/updateMissionForm'
+// import {updateEditMissionForm} from 'adaptive-common/reducers/edit-mission/updateEditMissionForm'
 
 import {changeView} from '../../reducers/view'
 
