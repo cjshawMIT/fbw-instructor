@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import QuestionCard from 'fbw-platform-common/components/question-card/web/QuestionCard'
+import QuestionCard from 'adaptive-common/components/question-card/web/QuestionCard'
 import StudentLink from '../StudentLink'
 
 import './QuestionResult.scss'

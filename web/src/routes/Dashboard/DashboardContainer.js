@@ -2,8 +2,8 @@ import { connect } from 'react-redux'
 import Dashboard from './Dashboard'
 
 import {changeView, changeMouseOver, changeClick} from '../../reducers/view'
-import {getPhaseIIResults} from 'fbw-platform-common/reducers/Result/getPhaseIIResults'
-import {getPhaseIResults} from 'fbw-platform-common/reducers/Result/getPhaseIResults'
+import {getPhaseIIResults} from 'adaptive-common/reducers/Result/getPhaseIIResults'
+import {getPhaseIResults} from 'adaptive-common/reducers/Result/getPhaseIResults'
 import {recommendMissionSelector} from './selectors/recommendMissionSelector'
 
 const mapDispatchToProps = (dispatch, ownProps) => {

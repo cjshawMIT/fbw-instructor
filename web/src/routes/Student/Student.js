@@ -2,14 +2,14 @@
 
 import React, {Component} from 'react'
 
-import MissionComponent from 'fbw-platform-common/components/mission/web/Mission'
-import MissionContainer from  'fbw-platform-common/components/mission/MissionContainer'
+import MissionComponent from 'adaptive-common/components/mission/web/Mission'
+import MissionContainer from  'adaptive-common/components/mission/MissionContainer'
 const Mission = MissionContainer(MissionComponent)
 
-import {osidToDisplayName} from 'fbw-platform-common/selectors/login'
+import {osidToDisplayName} from 'adaptive-common/selectors/login'
 
-// import QuestionsComponent from 'fbw-platform-common/components/questions/web/Questions'
-// import QuestionContainer from  'fbw-platform-common/components/questions/QuestionsContainer'
+// import QuestionsComponent from 'adaptive-common/components/questions/web/Questions'
+// import QuestionContainer from  'adaptive-common/components/questions/QuestionsContainer'
 // const Questions = QuestionContainer(QuestionsComponent)
 
 // import LoadingBox from '../../components/LoadingBox'
@@ -28,7 +28,7 @@ class Student extends Component {
     return (
       <div>
         <div className="student__nav-bar clearfix">
-          <p>You are looking at <span>{osidToDisplayName(this.props.result.takingAgentId)}</span> 
+          <p>You are looking at <span>{osidToDisplayName(this.props.result.takingAgentId)}</span>
           >>
           <span>{this.props.mission.displayName.text}</span></p>
         </div>

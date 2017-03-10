@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 const moment = require('moment')
 import LoadingBox from '../LoadingBox'
-import {PRE_FLIGHT_MISSION} from 'fbw-platform-common/utilities'
+import {PRE_FLIGHT_MISSION} from 'adaptive-common/utilities'
 import credentials from '../../d2lcredentials'
 
 import './SideBar.scss'

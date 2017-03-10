@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect'
 import _ from 'lodash'
-import {matches} from 'fbw-platform-common/utilities'
+import {matches} from 'adaptive-common/utilities'
 
 
 const getModules = (state) => state.mapping ? state.mapping.modules : null

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 import slug from 'slug'
-import {osidToDisplayName} from 'fbw-platform-common/selectors/login'
+import {osidToDisplayName} from 'adaptive-common/selectors/login'
 
 
 import './StudentLink.scss'

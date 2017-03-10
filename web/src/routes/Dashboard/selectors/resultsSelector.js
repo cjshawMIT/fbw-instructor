@@ -3,9 +3,9 @@ import 'lodash'
 import 'moment'
 import 'moment-timezone'
 
-import {getMapping, getPhaseIResults, getPhaseIIResults} from 'fbw-platform-common/selectors'
-import {isTarget} from 'fbw-platform-common/selectors/mission'
-import {getRoster} from 'fbw-platform-common/selectors/bank'
+import {getMapping, getPhaseIResults, getPhaseIIResults} from 'adaptive-common/selectors'
+import {isTarget} from 'adaptive-common/selectors/mission'
+import {getRoster} from 'adaptive-common/selectors/bank'
 import {notAchievedOnAttempt, notTaken} from './common'
 
 /**

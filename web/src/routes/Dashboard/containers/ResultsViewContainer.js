@@ -3,10 +3,10 @@ import { connect } from 'react-redux'
 
 import ResultsView from '../views/ResultsView'
 import {makeResultsSelector} from '../selectors/resultsSelector'
-import {selectDirective} from 'fbw-platform-common/reducers/Mission/selectDirective'
-import {selectTarget} from 'fbw-platform-common/reducers/Mission/selectTarget'
-import {selectMissionResult} from 'fbw-platform-common/reducers/Mission/selectMissionResult'
-import {getMapping} from 'fbw-platform-common/selectors'
+import {selectDirective} from 'adaptive-common/reducers/Mission/selectDirective'
+import {selectTarget} from 'adaptive-common/reducers/Mission/selectTarget'
+import {selectMissionResult} from 'adaptive-common/reducers/Mission/selectMissionResult'
+import {getMapping} from 'adaptive-common/selectors'
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
