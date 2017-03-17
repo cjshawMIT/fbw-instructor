@@ -1,3 +1,6 @@
+1.2.0:
+  - Disable ACC login button.
+
 1.1.0:
   - With basic SEI config.
 
