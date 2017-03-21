@@ -1,3 +1,6 @@
+1.2.1:
+  - Update adaptive-common version.
+
 1.2.0:
   - Disable ACC login button.
 
