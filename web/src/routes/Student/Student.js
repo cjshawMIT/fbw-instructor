@@ -32,7 +32,7 @@ class Student extends Component {
           >>
           <span>{this.props.mission.displayName.text}</span></p>
         </div>
-        <Mission />
+        <Mission viewOnly={true} />
       </div>
     )
   }

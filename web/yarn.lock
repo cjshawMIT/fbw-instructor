@@ -41,9 +41,9 @@ acorn@^3.0.0, acorn@^3.0.4:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
-adaptive-common@^2.5.8:
-  version "2.5.8"
-  resolved "https://registry.yarnpkg.com/adaptive-common/-/adaptive-common-2.5.8.tgz#ce9d017769e458dbd08d8e251e8c3992fd223eaf"
+adaptive-common@^2.5.9:
+  version "2.5.9"
+  resolved "https://registry.yarnpkg.com/adaptive-common/-/adaptive-common-2.5.9.tgz#9106470e359884261eb0f426454ee274605721a0"
   dependencies:
     axios "^0.15.2"
     babel-core "^6.23.1"
