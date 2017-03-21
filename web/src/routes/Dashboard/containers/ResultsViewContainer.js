@@ -7,6 +7,7 @@ import {selectDirective} from 'adaptive-common/reducers/Mission/selectDirective'
 import {selectTarget} from 'adaptive-common/reducers/Mission/selectTarget'
 import {selectMissionResult} from 'adaptive-common/reducers/Mission/selectMissionResult'
 import {getMapping} from 'adaptive-common/selectors'
+import { getEnrolledSubject } from 'adaptive-common/selectors/bank'
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
@@ -31,7 +32,8 @@ const makeMapStateToProps = (state, ownProps) => {
       currentMission: state.mission.currentMission,
       outcomes: getMapping(state).outcomes,
       view: state.view,
-      viewData: getResultsSelector(state, ownProps)
+      viewData: getResultsSelector(state, ownProps),
+      bank: getEnrolledSubject(state)
     }
   }
   return mapStateToProps
