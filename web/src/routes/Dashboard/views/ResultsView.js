@@ -55,6 +55,7 @@ class ResultsView extends Component {
     if (this.state.isExpanded) {
       directiveCarousel = (
         <DirectiveCarousel directives={viewData.directives}
+                          bank={props.bank}
                           directiveIndicators={viewData.directiveIndicators}
                           currentDirectiveIndex={props.currentDirectiveIndex}
                           onSelectDirective={(idx) => props.onClickDirective(idx)}
@@ -74,6 +75,7 @@ class ResultsView extends Component {
 
       if (props.currentTarget) {
         questionResult = <QuestionResult
+                            currentDirectiveIndex={props.currentDirectiveIndex}
                             result={props.currentTarget}
                             outcome={viewData.directives[props.currentDirectiveIndex]}
                             studentsAchieved={props.currentTarget.total - props.currentTarget.notAchieved}
@@ -100,6 +102,8 @@ class ResultsView extends Component {
             {_.map(props.viewData.results, studentResult => {
               return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
                                   studentResult={studentResult}
+                                  selectedQuestion={props.currentTarget}
+                                  currentDirectiveIndex={props.currentDirectiveIndex}
                                   onSelectResult={this.props.onSelectMissionResult}/>)
             })}
           </p>

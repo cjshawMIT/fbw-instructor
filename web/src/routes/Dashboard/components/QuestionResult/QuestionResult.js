@@ -22,8 +22,9 @@ class QuestionResult extends Component {
             </ul>
           )
 
-    console.log('outcome:', props.outcome);
+    // console.log('outcome:', props.outcome);
     console.log('result', props.result);
+    // console.log('props', props);
     // console.log('question', props.question);
 
     return (
@@ -34,10 +35,12 @@ class QuestionResult extends Component {
               <p className="question-statistics__students-list">
                 <span className="bold">Everyone: </span>
                 {_.map(props.result.total, studentResult => {
-                  console.log('studentResult', studentResult);
+                  // console.log('studentResult', studentResult);
 
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
                                       studentResult={studentResult}
+                                      selectedQuestion={props.result}
+                                      currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)
                 })}
               </p>
@@ -46,6 +49,8 @@ class QuestionResult extends Component {
                 {_.map(props.result.notAchieved, studentResult => {
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
                                       studentResult={studentResult}
+                                      selectedQuestion={props.result}
+                                      currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)                })}
               </p>
 
@@ -54,6 +59,8 @@ class QuestionResult extends Component {
                 {_.map(props.result.achieved, studentResult => {
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
                                       studentResult={studentResult}
+                                      selectedQuestion={props.result}
+                                      currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)                })}
               </p>
             </div>

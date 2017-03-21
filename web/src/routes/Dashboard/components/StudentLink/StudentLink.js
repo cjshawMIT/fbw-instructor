@@ -14,7 +14,7 @@ const StudentLink = (props) => {
 
   return (
     <Link key={studentResult.takingAgentId} className="students-list__item"
-              onClick={() => props.onSelectResult(studentResult)}
+              onClick={() => props.onSelectResult(studentResult, props.currentDirectiveIndex, props.selectedQuestion)}
               to={`/students/${studentDisplayName}/missions/${slug(studentResult.displayName.text)}`}
               target="_blank">{studentDisplayName}</Link>
   )
