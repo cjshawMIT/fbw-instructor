@@ -1,3 +1,7 @@
+1.2.2:
+  - Fix various issues with student results.
+  - Bump version of adaptive-common.
+
 1.2.1:
   - Update adaptive-common version.
 
