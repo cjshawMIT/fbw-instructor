@@ -102,7 +102,7 @@ class ResultsView extends Component {
             {_.map(props.viewData.results, studentResult => {
               return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
                                   studentResult={studentResult}
-                                  selectedQuestion={{id: 0}}
+                                  selectedQuestion={{itemId: 0}}
                                   currentDirectiveIndex={props.currentDirectiveIndex}
                                   onSelectResult={this.props.onSelectMissionResult}/>)
             })}
