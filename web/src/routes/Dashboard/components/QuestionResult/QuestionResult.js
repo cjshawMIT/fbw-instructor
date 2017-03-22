@@ -1,3 +1,4 @@
+import _ from 'lodash'
 import React, {Component} from 'react'
 import QuestionCard from 'adaptive-common/components/question-card/web/QuestionCard'
 import StudentLink from '../StudentLink'
@@ -38,7 +39,7 @@ class QuestionResult extends Component {
                   // console.log('studentResult', studentResult);
 
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
-                                      studentResult={studentResult}
+                                      studentResult={_.assign({}, studentResult)}
                                       selectedQuestion={props.result}
                                       currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)
@@ -48,7 +49,7 @@ class QuestionResult extends Component {
                 <span className="bold">Incorrect: </span>
                 {_.map(props.result.notAchieved, studentResult => {
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
-                                      studentResult={studentResult}
+                                      studentResult={_.assign({}, studentResult)}
                                       selectedQuestion={props.result}
                                       currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)                })}
@@ -58,7 +59,7 @@ class QuestionResult extends Component {
                 <span className="bold">Correct: </span>
                 {_.map(props.result.achieved, studentResult => {
                   return (<StudentLink key={studentResult.takingAgentId} className="students-list__item"
-                                      studentResult={studentResult}
+                                      studentResult={_.assign({}, studentResult)}
                                       selectedQuestion={props.result}
                                       currentDirectiveIndex={props.currentDirectiveIndex}
                                       onSelectResult={this.props.onSelectMissionResult}/>)                })}
