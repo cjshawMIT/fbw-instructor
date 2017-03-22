@@ -1,3 +1,6 @@
+1.2.6:
+  - Fix circular results on specific questions.
+
 1.2.5:
   - Remove custom deserializer for local storage persistance.
   - Testing for student results fix.
