@@ -1,3 +1,6 @@
+1.2.7:
+  - Bump adaptive common to fix circular results.
+
 1.2.6:
   - Fix circular results on specific questions.
 
