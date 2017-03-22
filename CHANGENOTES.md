@@ -1,3 +1,7 @@
+1.2.5:
+  - Remove custom deserializer for local storage persistance.
+  - Testing for student results fix.
+  
 1.2.4:
   - Fix getting student results when click on name (with no
     question selected).
