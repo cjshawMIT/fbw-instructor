@@ -47,7 +47,9 @@ export default (initialState = {}) => {
           }),
           login: state.login,
           location: state.location,
-          view: state.view
+          view: _.assign({}, state.view, {
+            name: 'dashboard.resultsView'
+          })
         };
 
         return subset;
@@ -57,20 +59,21 @@ export default (initialState = {}) => {
 
       return {};
     },
-    deserialize: serialized => {
-      let state = JSON.parse(serialized);
-      if (state) {
-        state.editMission.spawnDate = {
-          startTime: moment(),
-          deadline: moment().add(7, 'd')
-        }
-        console.log('deserialized', state);
-
-        return state;
-      }
-
-      return {}
-    }
+    // deserialize: serialized => {
+    //   let state = JSON.parse(serialized);
+    //
+    //   if (state && state.editMission) {
+    //     // state.editMission.spawnDate = {
+    //     //   startTime: moment(),
+    //     //   deadline: moment().add(7, 'd')
+    //     // }
+    //     // console.log('deserialized', state);
+    //     //
+    //     return state;
+    //   }
+    //
+    //   return {}
+    // }
   }))
 
   // ======================================================
