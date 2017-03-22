@@ -59,21 +59,21 @@ export default (initialState = {}) => {
 
       return {};
     },
-    // deserialize: serialized => {
-    //   let state = JSON.parse(serialized);
-    //
-    //   if (state && state.editMission) {
-    //     // state.editMission.spawnDate = {
-    //     //   startTime: moment(),
-    //     //   deadline: moment().add(7, 'd')
-    //     // }
-    //     // console.log('deserialized', state);
-    //     //
-    //     return state;
-    //   }
-    //
-    //   return {}
-    // }
+    deserialize: serialized => {
+      let state = JSON.parse(serialized);
+
+      if (state && state.editMission) {
+        state.editMission.spawnDate = {
+          startTime: moment(),
+          deadline: moment().add(7, 'd')
+        }
+        console.log('deserialized', state);
+        
+        return state;
+      }
+
+      return {}
+    }
   }))
 
   // ======================================================
