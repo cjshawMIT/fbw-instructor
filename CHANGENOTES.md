@@ -1,3 +1,7 @@
+## [1.2.8] - 2017-04-13:
+### Changed
+- MathJax cdn.
+
 1.2.7:
   - Bump adaptive common to fix circular results.
 
@@ -31,3 +35,5 @@
 
 1.0.0:
   - Initial fork from FBW repo.
+
+[1.2.8]: https://github.com/mitsei/fbw-instructor/compare/1.2.7...1.2.8

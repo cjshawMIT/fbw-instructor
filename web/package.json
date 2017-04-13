@@ -1,6 +1,6 @@
 {
   "name": "fbw-instructor-app--web",
-  "version": "0.0.1",
+  "version": "1.2.8",
   "description": "FbW Instructor App for web",
   "main": "index.js",
   "engines": {
