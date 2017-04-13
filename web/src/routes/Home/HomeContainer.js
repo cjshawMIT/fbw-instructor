@@ -35,9 +35,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onClickBank: (bank, username, enrolledBanks,
       credentials, d2lToken, orgUnitId) => {
-      console.log('clicked bank', bank, username, enrolledBanks);
-      console.log('clicked bank2', credentials, d2lToken, orgUnitId);
-
+      
       dispatch(selectBank(bank));
       // for a newly created class, you cannot call getMissions
       // immediately after selectBank -- needs to happen afterwards,
